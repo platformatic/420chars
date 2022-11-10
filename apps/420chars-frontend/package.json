@@ -7,9 +7,12 @@
   },
   "author": "Simon Plenderleith <simon@simonplend.co.uk> (https://simonplend.com/)",
   "devDependencies": {
+    "@astrojs/react": "^1.2.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.8",
-    "astro": "^1.6.5"
+    "astro": "^1.6.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@astrojs/tailwind": "^2.1.2",
