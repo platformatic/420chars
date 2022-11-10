@@ -2,6 +2,10 @@
 
 Build your own Twitter alternative with Platformatic.
 
+## Database schema
+
+[Database schema diagram](https://miro.com/app/board/uXjVPFKqRBA=/) (Miro)
+
 ## Requirements
 
 - [ ] Feature: Create account
