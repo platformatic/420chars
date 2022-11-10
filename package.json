@@ -1,0 +1,22 @@
+{
+  "name": "420chars",
+  "description": "Build your own Twitter alternative with Platformatic.",
+  "private": true,
+  "scripts": {
+    "test": "standard | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/platformatic/420chars.git"
+  },
+  "author": "Simon Plenderleith <simon@simonplend.co.uk> (https://simonplend.com/)",
+  "bugs": {
+    "url": "https://github.com/platformatic/420chars/issues"
+  },
+  "homepage": "https://github.com/platformatic/420chars#readme",
+  "devDependencies": {
+    "@fastify/pre-commit": "^2.0.2",
+    "snazzy": "^9.0.0",
+    "standard": "^17.0.0"
+  }
+}
