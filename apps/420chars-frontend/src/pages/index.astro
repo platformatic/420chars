@@ -1,9 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import App from '../components/app.jsx'
 ---
 
 <Layout title="Feed">
-  <main>
-    <p>We'll show all the posts here.</p>
-  </main>
+  <App client:only="react" />
 </Layout>
