@@ -1,0 +1,17 @@
+{
+  "name": "420chars-api",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Matteo Collina <hello@matteocollina.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@platformatic/sql-graphql": "^0.6.1",
+    "@platformatic/sql-mapper": "^0.6.1",
+    "fastify": "^4.9.2"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "server": {
+    "hostname": "127.0.0.1",
+    "port": 3042,
+    "cors": {
+      "origin": "*"
+    }
+  },
+  "core": {
+    "connectionString": "sqlite://db.sqlite",
+    "graphql": true,
+    "ignore": {
+      "versions": true
+    }
+  },
+  "authorization": {
+    "jwt": {
+      "jwks": {
+        "allowedDomains": ["https://420chars-dev.us.auth0.com/"]
+      }
+    },
+    "roleKey": "https://420chars.space/X-PLATFORMATIC-ROLE",
+    "rules": [{
+      "role": "user",
+      "entity": "user",
+      "find": {
+        "checks": {
+          "auth0Id": {
+            "eq": "sub"
+          }
+        }
+      },
+      "defaults": {
+        "auth0Id": "sub",
+        "username": "https://420chars.space/X-PLATFORMATIC-GHNICKNAME",
+        "email": "https://420chars.space/X-PLATFORMATIC-GITHUB-EMAIL"
+      },
+      "delete": false,
+      "save": {
+        "checks": {
+          "auth0Id": {
+            "eq": "sub"
+          }
+        }
+      }
+    }
+
+    ]
+  },
+  "migrations": {
+    "dir": "migrations",
+    "table": "versions"
+  },
+  "plugin": {
+    "path": "./plugin.js"
+  },
+  "types": {
+    "autogenerate": true
+  }
+}

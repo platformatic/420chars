@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import App from '../components/app.jsx'
+---
+
+<Layout title="Feed">
+  <App client:only="react" />
+</Layout>
